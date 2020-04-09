@@ -1,0 +1,62 @@
+
+/* large images on the respective blog posts */
+
+.image-wrapper{
+    margin: 0;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-distancing-image{
+    background-image: url("../images/social-distancing.jpeg");
+}
+
+.sanitaion-image{
+    background-image: url("../images/sanitation.jpg");
+}
+
+.ppe-image{
+    background-image: url('../images/personal-protection.jpeg');
+}
+
+/* styling the avatar */
+.avatar{
+    background-image: url('../images/avatar.jpeg');
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* social icons' styling */
+
+.social-icon{
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+    margin: 0 0 0 1em;
+    background-size: cover;
+    background-position: center;
+}
+
+.fb-icon{
+    background-image: url("../images/fb_icon.jpg");
+}
+
+.twitter-icon{
+    background-image: url("../images/twitter_icon.png");
+}
+
+.linkedin-icon{
+    background-image: url("../images/linkedIn_icon.png");
+}
+
+/* displaying the social icons with flex */
+.social-icon-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 10px 0 10px 0;
+}

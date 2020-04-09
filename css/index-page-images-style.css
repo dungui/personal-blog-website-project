@@ -1,0 +1,30 @@
+/* images for the front page articles */
+
+.post-image{
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.Vaccines-image{
+    background-image: url('../images/Covid19-Vaccine.jpg');
+}
+
+.ppe-image{
+    background-image: url('../images/personal-protection.jpeg');
+}
+
+.sanitaion-image{
+    background-image: url('../images/sanitation.jpg');
+}
+
+.soc-distancing-image{
+    background-image: url('../images/social-distancing.jpeg');
+}
+
+.post a{
+    font-family: Verdana, Helvetica, Monospace;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #80d8ff;
+}

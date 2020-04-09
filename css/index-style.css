@@ -1,0 +1,217 @@
+/* styling for the devices below 600px width, styling with the mobile first */
+
+@import "./index-page-images-style.css";
+@import "./subscription-form.css";
+
+body {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+.blog-top-header,
+.posts-heading{
+    color: rgb(9, 9, 71);
+    margin: 15px 0 5px 0;
+}
+
+.navi-header{
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bolder;
+    padding: 10px;
+    font-style: italic;
+    background-color: rgb(242, 242, 242);
+    color: rgb(9, 9, 71);
+}
+
+.navi-list{
+    margin-top: 30px;
+}
+
+.navi-list li{
+    margin: 0 2% 12px 0;
+    display: inline;
+    border-left: 2px solid black;
+    padding: 0 0 0 2px;
+}
+
+.navi-list li a{
+   font-weight: lighter;
+   text-decoration: none;
+   color: #80d8ff;
+}
+
+.post{
+    border: 1px solid black;
+}
+
+.header{
+    padding: 0 22px 0 30px;
+    background-color: #80d8ff;
+}
+
+.main-content{
+    padding: 0 22px 0 10px;
+}
+
+.navigation{
+    padding: 20px 0 0 15px;
+    border-right: 3px solid #80d8ff;
+    margin: 30px 30px 30px 0;
+}
+
+.read-more-button{
+    background-color: rgb(9, 9, 71);
+    border-radius: 10px;
+}
+
+.read-more-button .read-more-link{
+    font-size: 1.2em;
+    margin: 2px;
+}
+
+
+.footer{
+    padding: 15px;
+    color: whitesmoke;
+    line-height: 10px;
+    background-color: rgb(9, 9, 71);
+    text-align: center;
+}
+
+/* Grid display styling to form the page layout*/
+
+.wrapper{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "head"
+    "nav"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: head;
+}
+
+.main-content{
+    grid-area: main;
+}
+
+.navigation{
+    grid-area: nav;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* Flex display styling for the articles nested in a grid item */
+.posts-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.post{
+    flex: 1 1 40px;
+    text-align: left;
+    padding: 0 10px 10px 10px;
+    margin: 5px;
+}
+
+.posts-subheader{
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+
+/* styling for the devices with width between 600px and 900px 
+ like tablets */
+
+@media (min-width: 600px) and (max-width: 900px){
+    .posts-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(auto, auto);
+        row-gap: 30px;
+        grid-template-areas: 
+        "subheader subheader"
+        "article1 article2"
+        "article3 article4";
+    }
+    
+    .posts-subheader{
+        grid-area: subheader;
+    }
+
+    .article1{
+        grid-area: article1;
+    }
+
+    .article2{
+        grid-area: article2;
+    }
+
+    .article3{
+        grid-area: article3; 
+    }
+
+    .article4{
+        grid-area: article4;
+    }
+
+    .navi-list li{
+        display: inline;
+        margin-right: 2%;
+        border-left: 2px solid black;
+        padding: 0 0 0 2px;
+    }
+}
+
+/* styling for the devices with width above 900px like min-laptops ans desktops */
+
+@media (min-width: 901px){
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "head head head head"
+        "nav main main main"
+        "footer footer footer footer";
+    }
+
+    .posts-wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+
+    .post{
+        flex: 1 1 10px;
+    }
+
+    .navi-list li{
+        margin: 0 2% 12px 0;
+        display: block;
+        border-left: 0 solid black;
+        padding: 0 0 0 2px;
+    }
+
+    .navi-list li a{
+        list-style-type: square;
+    }
+}
+
+

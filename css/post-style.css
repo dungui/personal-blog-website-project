@@ -1,0 +1,143 @@
+
+/* styling for the individual post
+Here we first styled for the devices with width below 600px like min-tabs and mobile phones */
+
+@import "./singlepost-page-image-style.css";
+
+body{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 20px;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+.post-heading{
+    font-family: Verdana, Helvetica, Monospace;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}
+
+.author-data,
+ .back-to-homepage{
+    font-family: Verdana, Helvetica, Monospace;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #80d8ff;
+}
+
+.content{
+    font-family: Verdana, Helvetica, Monospace;
+}
+
+.precaution-heading{
+    font-family: Verdana, Helvetica, Monospace;
+    font-size: 1.2em; 
+    margin: 30px 0 0 0;
+}
+
+.precautions{
+    font-family: 'Courier New';
+    border-left: 5px solid darkblue;
+    margin-bottom: 10px;
+    padding: 18px;
+    background-color: rgb(242, 242, 242);
+}
+
+.appln-methods{
+    font-weight: bolder;
+    margin: 30px 0 0 0;
+    font-size: 1.2em;
+}
+
+.appln-methods-listing li{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.appln-methods-listing{
+    margin: 0 0 40px 0;
+}
+
+.post-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* styling the author information and details on the post*/
+
+.author-info-wrapper{
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+.author-details{
+    margin: 0 0 0 8px;
+    font-style: italic;
+}
+
+.author-data{
+    margin: 0 0 3px 0;
+}
+
+.author-data a{
+    text-decoration: none;
+}
+
+/* Related posts links styling */
+.related-posts-wrapper{
+    margin: 0 0 50px 0;
+}
+
+.related-posts-title{
+    color: rgb(9, 9, 71) ;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.related-posts-buttons{
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+    padding: 5px;
+    border: 2px #80d8ff solid;
+}
+
+.related-posts-buttons .item{
+    text-decoration: none;
+}
+
+
+
+/* styling for devices with width 600px and 950px */
+
+@media (min-width: 600px) and (max-width: 950px){
+    body{
+        margin: 25px;
+    }
+
+    .image-wrapper{
+        margin: 0 -1em 0 -1em;
+        height: 200px;
+    }
+}
+
+/* styling for devices with width 950px and above */
+@media (min-width: 951px){
+    body{
+        margin: 5em 10em 0 18em;
+    }
+
+    .image-wrapper{
+        margin: 0 -5em 0 -5em;
+        height: 250px;
+    }
+}

@@ -1,0 +1,34 @@
+/* styling for the subscription on the homepage */
+
+.subscribe-part{
+    float: right;
+    margin: 70px 0 20px 0;
+    width: 40%;
+}
+
+.subscription-header{
+    font-family: Verdana, Helvetica, Monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: #80d8ff;
+}
+
+.form [type="text"],
+.form [type="submit"],
+.form [type="email"]{
+    width: 100%;
+    border: 0.1em #80d8ff solid;
+    color: rgb(9, 9, 71);
+}
+
+.form [type="text"], 
+.form [type="email"]{
+    height: 2.2em;
+}
+
+.form [type="submit"]{
+    margin: 10px 0 0 0;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
